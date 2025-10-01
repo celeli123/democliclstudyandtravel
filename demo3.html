@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CILC Study and Travel | Experiencias que transforman vidas</title>
+  <meta name="description" content="CILC Study and Travel: idiomas, summer camps, secundaria y preparatoria en el extranjero; diplomados, maestrías y posgrados. Vive una experiencia que transforma tu vida."/>
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="CILC Study and Travel" />
+  <meta property="og:description" content="Más que viajes de estudio, ofrecemos experiencias que transforman vidas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo-clic.jpg" />
+  <meta property="og:locale" content="es_MX" />
+  <!-- Favicon -->
+  <link rel="icon" href="logo-clic.jpg" type="image/png" />
+  <!-- Fuentes & Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    :root{
+      --primary:#1f4e9e; --accent:#e0312b; --ink:#1a1f36; --muted:#6b7280;
+      --bg:#f7f8fc; --ring:#d5e1ff; --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif;color:var(--ink);background:var(--bg);scroll-behavior:smooth}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    p{line-height:1.75;text-align:justify}
+
+    /* Helpers */
+    .container{width:min(1160px,92%);margin-inline:auto}
+    .grid{display:grid;gap:1.25rem}
+    .btn{display:inline-block;padding:.9rem 1.2rem;border-radius:999px;font-weight:600;border:2px solid transparent;cursor:pointer;transition:.25s ease;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+    .btn-primary{background:linear-gradient(135deg,var(--primary),#173b7a);color:var(--white)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,0.18)}
+    .btn-ghost{border-color:var(--primary);color:var(--primary);background:transparent}
+    .btn-ghost:hover{background:rgba(31,78,158,.08);transform:translateY(-2px);box-shadow:0 8px 18px rgba(0,0,0,0.18)}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:600;color:var(--white);background:linear-gradient(135deg,var(--accent),#b81d18);padding:.35rem .7rem;border-radius:999px}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(160%) blur(10px);border-bottom:1px solid #e9eef9}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.6rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}
+    .brand img{width:46px;height:46px;border-radius:50%;box-shadow:0 0 0 6px var(--ring)}
+    .brand h1{font-size:1.05rem;margin:0;font-weight:700;letter-spacing:.3px}
+    nav a{font-weight:600;color:#334155;margin-left:1rem;opacity:.9;white-space:nowrap}
+    nav a:hover{opacity:1}
+
+    /* Hamburguesa */
+    .menu-toggle{display:none;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;border:1px solid #dbe4ff;background:#fff;cursor:pointer}
+    .menu-toggle span{display:block;width:22px;height:2px;background:#1f2937;margin:3px 0;transition:.25s}
+    .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+    .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+
+/* ===== Hero con imagen y contraste mejorado ===== */
+.hero {
+  position: relative;
+  background: url('avion.jpeg') center/cover no-repeat;
+  color: #fff; /* fuerza que todo el texto sea blanco */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); /* oscurece un poco la imagen */
+  backdrop-filter: blur(2px); /* da efecto de vidrio */
+  z-index: 0;
+}
+
+.hero .wrap {
+  position: relative; /* mantiene el contenido sobre el overlay */
+  z-index: 1;
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+  color: #fff; /* asegura texto blanco */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* agrega sombra para mejor legibilidad */
+}
+
+/* Botones dentro del hero para que sigan viéndose bien */
+.hero .btn-primary {
+  background: #173b7a; /* azul sólido para destacar */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.hero .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.hero .btn-ghost {
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.hero .btn-ghost:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
+
+    /* Secciones */
+    .section{padding:4rem 0}
+    .section h3{font-size:clamp(1.4rem,3.2vw,2rem);margin:0 0 1rem;text-align:center}
+    .section .lead{margin:-.25rem auto 2.2rem;text-align:center;color:var(--muted);max-width:800px}
+
+    /* Cards Programas */
+    .cards{grid-template-columns:repeat(12,1fr)}
+    .card{grid-column:span 12;background:var(--white);border:1px solid #e7ecf7;border-radius:18px;padding:1.25rem;box-shadow:0 10px 30px rgba(31,78,158,.06)}
+    .card h4{margin:.25rem 0 .25rem;font-size:1.15rem}
+    .pill{font-size:.8rem;color:#0f172a;background:#eef2ff;border:1px solid #dbe5ff;border-radius:999px;padding:.25rem .5rem;font-weight:600}
+    .card ul{margin:.6rem 0 0;padding-left:1.1rem}
+    .card li{margin:.35rem 0}
+    .card .cta{margin-top:1rem}
+    @media (min-width:860px){.card{grid-column:span 6}}
+    @media (min-width:1100px){.card{grid-column:span 3}}
+
+    /* Valores */
+    .values{grid-template-columns:repeat(12,1fr)}
+    .value{grid-column:span 12;background:linear-gradient(180deg,var(--white),#f9fbff);border:1px solid #e7ecf7;border-radius:16px;padding:1rem}
+    .value strong{color:var(--primary)}
+    @media (min-width:900px){.value{grid-column:span 6}}
+
+    /* Misión / Visión */
+    .mv{display:grid;gap:1rem}
+    @media (min-width:900px){.mv{grid-template-columns:1fr 1fr}}
+    .mv .box{background:var(--white);border:1px solid #e7ecf7;border-radius:18px;padding:1.25rem}
+    .mv h4{margin:.25rem 0 .5rem}
+
+    /* Pasos */
+    .steps{grid-template-columns:repeat(12,1fr)}
+    .step{grid-column:span 12;background:var(--white);border:1px solid #e7ecf7;border-radius:16px;padding:1rem;display:flex;gap:.9rem;align-items:flex-start}
+    .num{width:34px;height:34px;min-width:34px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--primary),#173b7a)}
+    @media (min-width:860px){.step{grid-column:span 4}}
+
+    /* Banda CTA */
+    .band{background:linear-gradient(135deg,var(--primary),#173b7a);color:#fff;border-radius:22px;padding:1.5rem 1.25rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
+
+    /* Footer */
+    footer{padding:2.2rem 0 3.2rem;color:#475569}
+
+    /* WhatsApp flotante con icono */
+    .wa{position:fixed;right:18px;bottom:18px;z-index:60}
+    .wa a{display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;font-size:28px;box-shadow:0 12px 30px rgba(0,0,0,.18);transition:transform .25s ease, box-shadow .25s ease}
+    .wa a::before{content:"\f232";font-family:'Font Awesome 5 Brands';font-weight:400}
+    .wa a:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(0,0,0,.25)}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .nav{flex-wrap:wrap;gap:.5rem 1rem;padding:.6rem 0 1rem}
+      .brand{gap:.5rem}
+      .brand img{width:40px;height:40px}
+      .brand h1{font-size:.95rem}
+      .menu-toggle{display:inline-flex}
+      header nav{display:none;width:100%;flex-direction:column;gap:.35rem}
+      header nav a{margin:0;padding:.5rem 0;border-top:1px solid #eef2ff}
+      header nav.show{display:flex}
+
+      .hero .wrap{grid-template-columns:1fr;padding:2.2rem 0}
+      .hero h2{font-size:clamp(1.6rem,7vw,2.2rem)}
+      .hero p{font-size:.98rem}
+
+      .cards .card{grid-column:span 12}
+      .values .value{grid-column:span 12}
+      .steps .step{grid-column:span 12}
+      .band{flex-direction:column;align-items:flex-start}
+    }
+    .btn-rojo {
+  background:linear-gradient(135deg, var(--accent), #b81d18);
+}
+.btn-rojo:hover {
+  background:linear-gradient(135deg, #b81d18, #a11310);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <img src="logo-clic.jpg" alt="CILC logo" />
+        <h1>CILC Study and Travel</h1>
+      </div>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav">
+        <a href="#programas">Programas</a>
+        <a href="#valores">Valores</a>
+        <a href="#mision-vision">Misión y Visión</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="badge">Más que viajes de estudio</span>
+        <h2>CILC Study and Travel: experiencias que <span style="color:var(--accent)">transforman vidas</span></h2>
+        <p>Aprende idiomas, vive culturas y <strong>conquista tu futuro</strong>. Acompañamos a estudiantes y familias en todo el proceso para estudiar en el extranjero: desde programas de idiomas y <em>summer camps</em>, hasta secundaria, preparatoria, diplomados, maestrías y posgrados.</p>
+        <div style="display:flex;gap:.7rem;flex-wrap:wrap">
+          <a class="btn btn-primary" href="#contacto">Quiero información</a>
+          <a class="btn btn-ghost" href="#programas">Ver programas</a>
+        </div>
+      </div>
+      <div class="hero-illus">
+        <img src="hero-students.svg" alt="Estudiantes en el extranjero" onerror="this.style.display='none'"/>
+        <div class="ring"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programas -->
+  <section id="programas" class="section">
+    <div class="container">
+      <h3>Programas que impulsan tu futuro</h3>
+      <p class="lead">Trabajamos con instituciones y aliados internacionales para ofrecerte opciones seguras y de alta calidad. Te asesoramos de principio a fin.</p>
+      <div class="grid cards">
+        <article class="card">
+          <span class="pill">Idiomas</span>
+          <h4>Programas de Idiomas</h4>
+          <p>Estudia inglés, francés u otros idiomas en destinos top. Inicio flexible, opciones intensivas o de larga duración.</p>
+          <ul>
+            <li>Escuelas acreditadas</li>
+            <li>Alojamiento y seguro opcional</li>
+            <li>Asesoría para visado</li>
+          </ul>
+          <div class="cta"><a class="btn btn-primary" href="#contacto">Solicitar cotización</a></div>
+        </article>
+
+        <article class="card">
+          <span class="pill">Summer Camps</span>
+          <h4>Campamentos de Verano</h4>
+          <p>Experiencias inmersivas para jóvenes: idiomas, deportes y cultura en un entorno seguro y supervisado.</p>
+          <ul>
+            <li>Guardias y monitores certificados</li>
+            <li>Actividades deportivas y excursiones</li>
+            <li>Paquetes todo incluido</li>
+          </ul>
+          <div class="cta"><a class="btn btn-primary" href="#contacto">Quiero apartar lugar</a></div>
+        </article>
+
+        <article class="card">
+          <span class="pill">Secundaria & Preparatoria</span>
+          <h4>Estudios en High School</h4>
+          <p>Vive 1 semestre o 1 año escolar en el extranjero y desarrolla habilidades académicas y personales únicas.</p>
+          <ul>
+            <li>Escuelas y distritos seleccionados</li>
+            <li>Familias anfitrionas verificadas</li>
+            <li>Seguimiento durante todo el programa</li>
+          </ul>
+          <div class="cta"><a class="btn btn-primary" href="#contacto">Requisitos y costos</a></div>
+        </article>
+
+        <article class="card">
+          <span class="pill">Diplomados • Maestrías • Posgrados</span>
+          <h4>Educación Superior</h4>
+          <p>Diplomados, maestrías y posgrados en universidades internacionales con reconocimiento global.</p>
+          <ul>
+            <li>Asesoría de elegibilidad</li>
+            <li>Aplicación y becas</li>
+            <li>Plan de alojamiento y llegada</li>
+          </ul>
+          <div class="cta"><a class="btn btn-primary" href="#contacto">Explorar opciones</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores -->
+  <section id="valores" class="section" style="padding-top:2rem">
+    <div class="container">
+      <h3>Nuestros valores</h3>
+      <p class="lead">Formamos ciudadanos globales con acompañamiento real y humano.</p>
+      <div class="grid values">
+        <div class="value"><strong>1. Compromiso:</strong> Acompañamos a cada estudiante con responsabilidad y dedicación, asegurando una experiencia educativa única y transformadora.</div>
+        <div class="value"><strong>2. Excelencia:</strong> Programas de alta calidad y servicio personalizado que supera expectativas.</div>
+        <div class="value"><strong>3. Confianza:</strong> Relaciones transparentes y sólidas con estudiantes, familias e instituciones educativas.</div>
+        <div class="value"><strong>4. Innovación:</strong> Buscamos constantemente nuevas oportunidades y programas internacionales.</div>
+        <div class="value"><strong>5. Diversidad e Inclusión:</strong> Respeto y apertura hacia todas las culturas; promovemos empatía y conciencia global.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión y Visión -->
+  <section id="mision-vision" class="section" style="padding-top:2rem">
+    <div class="container mv">
+      <div class="box">
+        <h4>Misión</h4>
+        <p>Transformar la vida de los estudiantes a través de experiencias educativas internacionales, brindando acceso a programas de calidad en el extranjero que fortalezcan sus habilidades académicas, lingüísticas y culturales. Inspiramos confianza, abrimos fronteras y los acompañamos en cada paso hacia un futuro global, exitoso y sin límites.</p>
+      </div>
+      <div class="box">
+        <h4>Visión</h4>
+        <p>Ser la agencia líder en turismo educativo, reconocida por abrir puertas al mundo y ofrecer experiencias transformadoras que formen ciudadanos globales capaces de impactar positivamente su vida personal, profesional y a la sociedad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pasos -->
+  <section class="section" style="padding-top:2rem">
+    <div class="container">
+      <h3>¿Cómo te ayudamos?</h3>
+      <p class="lead">Nuestro proceso es claro, rápido y acompañado por expertos.</p>
+      <div class="grid steps">
+        <div class="step"><div class="num">1</div><div><strong>Diagnóstico personalizado</strong><p>Entendemos tu perfil, metas y presupuesto para sugerirte el programa ideal.</p></div></div>
+        <div class="step"><div class="num">2</div><div><strong>Propuesta de programas</strong><p>Comparamos destinos, fechas, requisitos y costos. Te presentamos alternativas claras.</p></div></div>
+        <div class="step"><div class="num">3</div><div><strong>Aplicación y visado</strong><p>Te guiamos en documentos, admisiones, seguro médico, alojamiento y visa.</p></div></div>
+        <div class="step"><div class="num">4</div><div><strong>Preparación de viaje</strong><p>Orientación previa a tu salida: maleta, llegada, transporte, soporte local.</p></div></div>
+        <div class="step"><div class="num">5</div><div><strong>Acompañamiento</strong><p>Seguimiento durante todo el programa para que tu experiencia sea excepcional.</p></div></div>
+        <div class="step"><div class="num">6</div><div><strong>Regreso y proyección</strong><p>Certificados, revalidación (si aplica) y asesoría para tus siguientes metas.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="section" style="padding-top:1rem">
+    <div class="container band">
+      <div>
+        <div class="kicker">¿Listo para estudiar en el extranjero?</div>
+        <h3 style="margin:.2rem 0 0">Escríbenos por WhatsApp y recibe asesoría gratuita</h3>
+      </div>
+      <a class="btn btn-primary btn-rojo" href="https://wa.me/525567436871?text=Hola%20CILC%2C%20quiero%20informaci%C3%B3n%20para%20estudiar%20en%20el%20extranjero" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h3>Contáctanos</h3>
+      <p class="lead">Completa el formulario y en breve un asesor se pondrá en contacto contigo.</p>
+      <form class="grid" style="grid-template-columns:repeat(12,1fr);gap:1rem" onsubmit="event.preventDefault();alert('¡Gracias! Hemos recibido tu solicitud.');">
+        <div style="grid-column:span 6"><label>Nombre completo<br><input required type="text" placeholder="Tu nombre" style="width:100%;padding:.8rem;border:1px solid #d6def1;border-radius:12px"></label></div>
+        <div style="grid-column:span 6"><label>Correo<br><input required type="email" placeholder="tu@email.com" style="width:100%;padding:.8rem;border:1px solid #d6def1;border-radius:12px"></label></div>
+        <div style="grid-column:span 6"><label>Teléfono / WhatsApp<br><input required type="tel" placeholder="55 6743 6871" style="width:100%;padding:.8rem;border:1px solid #d6def1;border-radius:12px"></label></div>
+        <div style="grid-column:span 6"><label>Programa de interés<br>
+          <select style="width:100%;padding:.8rem;border:1px solid #d6def1;border-radius:12px">
+            <option>Idiomas</option><option>Summer Camps</option><option>Secundaria / Preparatoria</option>
+            <option>Diplomados</option><option>Maestrías</option><option>Posgrados</option>
+          </select>
+        </label></div>
+        <div style="grid-column:span 12"><label>Mensaje<br><textarea rows="5" placeholder="Cuéntanos tus metas, fechas y presupuesto aproximado" style="width:100%;padding:.8rem;border:1px solid #d6def1;border-radius:12px"></textarea></label></div>
+        <div style="grid-column:span 12"><button class="btn btn-primary" type="submit">Enviar solicitud</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
+      <div style="display:flex;align-items:center;gap:.75rem">
+        <img src="logo-clic.jpg" alt="CILC logo" style="width:42px;height:42px;border-radius:50%"/>
+        <div>
+          <strong>CILC Study and Travel</strong><br>
+          <span style="color:#64748b">Idiomas • Summer Camps • Secundaria y Preparatoria • Diplomados • Maestrías • Posgrados</span>
+        </div>
+      </div>
+      <div>
+        <a class="btn btn-ghost" href="https://wa.me/525567436871" target="_blank" rel="noopener">WhatsApp: 55 6743 6871</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <div class="wa">
+    <a href="https://wa.me/525567436871?text=Hola%20CILC%2C%20quiero%20informaci%C3%B3n" aria-label="WhatsApp"></a>
+  </div>
+
+  <!-- JS para el menú -->
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('site-nav');
+    if(btn && nav){
+      btn.addEventListener('click',()=>{
+        const open = nav.classList.toggle('show');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+        nav.classList.remove('show');
+        btn.setAttribute('aria-expanded','false');
+      }));
+      window.addEventListener('resize',()=>{
+        if(window.innerWidth>900){
+          nav.classList.remove('show');
+          btn.setAttribute('aria-expanded','false');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
