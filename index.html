@@ -54,30 +54,59 @@
     .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
     .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
 
-    /* Hero */
-    .hero {
+/* ===== Hero con imagen y contraste mejorado ===== */
+.hero {
   position: relative;
-  overflow: hidden;
-  /* imagen de fondo */
-  background: url(avion.jpeg) center/cover no-repeat;
+  background: url('avion.jpeg') center/cover no-repeat;
+  color: #fff; /* fuerza que todo el texto sea blanco */
 }
 
-/* efecto vidrio encima de la imagen */
-.hero::after {
+.hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  /* menos opacidad y menos blur para que se vea mejor la imagen */
-  background: rgba(255,255,255,0.05); 
-  backdrop-filter: blur(2px) brightness(0.95);
+  background: rgba(0,0,0,0.35); /* oscurece un poco la imagen */
+  backdrop-filter: blur(2px); /* da efecto de vidrio */
+  z-index: 0;
 }
 
-
-/* asegura que el contenido quede por encima */
 .hero .wrap {
-  position: relative;
-  z-index: 2;
+  position: relative; /* mantiene el contenido sobre el overlay */
+  z-index: 1;
 }
+
+.hero h1,
+.hero h2,
+.hero p {
+  color: #fff; /* asegura texto blanco */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4); /* agrega sombra para mejor legibilidad */
+}
+
+/* Botones dentro del hero para que sigan viéndose bien */
+.hero .btn-primary {
+  background: #173b7a; /* azul sólido para destacar */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.hero .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+}
+
+.hero .btn-ghost {
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.hero .btn-ghost:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+}
+
 
     .ring{position:absolute;inset:auto 0 -40px 0;height:220px;background:radial-gradient(closest-side,rgba(31,78,158,.13),transparent 65%)}
 
@@ -374,3 +403,4 @@
   </script>
 </body>
 </html>
+
